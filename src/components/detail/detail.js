@@ -62,17 +62,18 @@ function detail() {
           
           `
           const divButtonSizes = document.querySelectorAll('.div__button--sizes')
+          //estamos selecionando todos los botones
           //console.log(divButtonSizes); //6 elementos que tienen esa clase
 
           let size = null
 
           divButtonSizes.forEach((button) => {
-
+          //lo recorremos con el forEach
             button.addEventListener(('click'), function () {
 
               divButtonSizes.forEach((btn) => {
                 btn.classList.remove('div__button--active')
-              })
+              })//cuando un boton escuche el clikc se ejecuta esto ;le quito el bg rojo
 
               button.classList.add('div__button--active')
               size = button.textContent

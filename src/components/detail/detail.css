@@ -128,7 +128,21 @@
 }
 
 .ul__button--div:active {
-  transform: scale(0.7);
+  animation: shaking 0.3s;
+}
+@keyframes shaking{
+  10%{
+    transform: scale(1.05) rotate(5deg);
+  }
+  20%{
+    transform: scale(1.05) rotate(-5deg);
+  }
+  30%{
+    transform: scale(1.05) rotate(5deg);
+  }
+  40%{
+    transform:none;
+  }
 }
 
 .ul__figure {
